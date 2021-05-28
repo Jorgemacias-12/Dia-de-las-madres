@@ -7,6 +7,7 @@ import { IndexComponent } from './components/index/index.component';
 import { SongComponent } from './components/song/song.component';
 import { JokesComponent } from './components/jokes/jokes.component';
 import { PoemsComponent } from './components/poems/poems.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PoemsComponent } from './components/poems/poems.component';
     IndexComponent,
     SongComponent,
     JokesComponent,
-    PoemsComponent
+    PoemsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
