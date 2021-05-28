@@ -1,0 +1,39 @@
+<div class="app">
+  <nav class="app-nav">
+    <div class="nav-title">
+      <h1 class="title" [innerText]="greeting">
+        ¡Bienvenido(a)s!
+      </h1>
+    </div>
+    <ul class="nav-list">
+      <li class="list-item">
+        <a routerLink="/" class="item-link">
+          Inicio
+        </a>
+      </li>
+      <li class="list-item">
+        <a routerLink="/song" class="item-link">
+          Canción
+        </a>
+      </li>
+      <li class="list-item">
+        <a routerLink="/jokes" class="item-link">
+          Chistes
+        </a>
+      </li>
+      <li class="list-item">
+        <a routerLink="/poems" class="item-link">
+          Poemas
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main class="main">
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="footer">
+    <p class="copy" [innerText]="copyright_date">
+      &copy; Jorge Antonio Macias Zambrano
+    </p>
+  </footer>
+</div>
