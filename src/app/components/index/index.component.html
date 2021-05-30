@@ -35,9 +35,11 @@
   <section class="photos">
     <h2 class="subtitle">Fotos en familia</h2>
     <div class="container">
-      <button class="btn btn-left" (click)="changeImage()"><span class="fas fa-angle-left"></span></button>
       <img class="carrousel" [src]="paths[0]" alt="imagenes sobre la familia">
-      <button class="btn btn-right" (click)="changeImage()"><span class="fas fa-angle-right"></span></button>
+      <div class="carrousel-controls">
+        <button class="btn"><span class="fas fa-angle-left"></span></button>
+        <button class="btn"><span class="fas fa-angle-right"></span></button>
+      </div>
     </div>
   </section>
   <section class="pleasures">
