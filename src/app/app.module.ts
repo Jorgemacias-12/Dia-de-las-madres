@@ -8,6 +8,7 @@ import { SongComponent } from './components/song/song.component';
 import { JokesComponent } from './components/jokes/jokes.component';
 import { PoemsComponent } from './components/poems/poems.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { CarrouselComponent } from './carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     SongComponent,
     JokesComponent,
     PoemsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,

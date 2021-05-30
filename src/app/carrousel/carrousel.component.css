@@ -1,0 +1,27 @@
+.btn {
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255,255,255, 0.7);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn-left {
+  margin-right: 5px;
+}
+
+.btn-right {
+  margin-left: 5px;
+}
+
+
+.btn:hover {
+  background-color: #7289DA;
+  transition: 0.2s all;
+  color: white;
+}
+
+.btn-transparent {
+
+}
