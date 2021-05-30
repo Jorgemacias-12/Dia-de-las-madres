@@ -1,1 +1,78 @@
-<p>index works!</p>
+<div class="route-index">
+  <h1 class="title">
+    ¡Felíz día de la madre Mamá!
+  </h1>
+  <h2 class="subtitle">Acerca de mi madre</h2>
+  <section class="about">
+    <img class="image" src="../../../assets/mama.jpg" alt="">
+    <div class="text">
+      <p class="text-p">
+        Mi madre nacio en 1973, tiene actualmente la edad de 47 años. Su nombre completo es <strong>Flora Paticia Macias
+          Zambrano</strong> es
+        enfermera, y trabaja para sacar a su familia adelante además de que nada le falte a sus hijos.
+      </p>
+      <p class="text-p">
+        A mi madre le gusta bailar, cantar, hacer ejercicio, hablar con sus hijos, además de ayudarlos en cualquier duda
+        o
+        problematica que tengan.
+      </p>
+      <p class="text-p">
+        Le gusta su trabajo como Enfermera aunque busca mejorar día con día y extender su conocimiento para dar más
+        oportunidades a sus hijos.
+      </p>
+      <p class="text-p">
+        Le gusta pasar el tiempo escuchando música sobre todo cuando toca limpiar la casa.
+      </p>
+      <p class="text-p">
+        De vez en cuando regaña a los hijos cuando no se portan bien.
+      </p>
+      <p class="text-p">
+        En las noches cuando llega de su trabajo, le gusta ver las novelas que pasan por el canal Unicable.
+      </p>
+    </div>
+  </section>
+  <hr>
+  <section class="photos">
+    <h2 class="subtitle">Fotos en familia</h2>
+    <div class="container">
+      <button class="btn btn-left" (click)="changeImage()"><span class="fas fa-angle-left"></span></button>
+      <img class="carrousel" [src]="paths[0]" alt="imagenes sobre la familia">
+      <button class="btn btn-right" (click)="changeImage()"><span class="fas fa-angle-right"></span></button>
+    </div>
+  </section>
+  <section class="pleasures">
+    <h2 class="subtitle">Gustos</h2>
+    <table class="table">
+      <tr class="table-row">
+        <th class="table-title table-border">Canciones que escuchas</th>
+        <th class="table-title table-border">Artistas Favoritos</th>
+        <th class="table-title table-border">Novelas que has visto</th>
+      </tr>
+      <tr class="row">
+        <td class="table-content table-border">Tu amor me hace bien</td>
+        <td class="table-content table-border">Marc Anthony</td>
+        <td class="table-content table-border">Un mundo de juguete</td>
+      </tr>
+      <tr class="row">
+        <td class="table-content table-border">Yo también</td>
+        <td class="table-content table-border">Edith Márquez</td>
+        <td class="table-content table-border">Corazón salvaje</td>
+      </tr>
+      <tr class="row">
+        <td class="table-content table-border">Amante amigo</td>
+        <td class="table-content table-border">Adolecentes orquesta</td>
+        <td class="table-content table-border">La madrastra</td>
+      </tr>
+      <tr class="row">
+        <td class="table-content table-border">Me tengo que ir</td>
+        <td class="table-content table-border">Romeo santos</td>
+        <td class="table-content table-border">La fea mas bella</td>
+      </tr>
+      <tr class="row">
+        <td class="table-content table-border">Anhelo</td>
+        <td class="table-content table-border">Yuri</td>
+        <td class="table-content table-border">Corazón indomable</td>
+      </tr>
+    </table>
+  </section>
+</div>
