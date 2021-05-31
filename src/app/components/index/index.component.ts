@@ -7,13 +7,6 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  paths: { [index: number]: string } = {
-    0: "../../../assets/1.jpg",
-    1: "../../../assets/2.jpg",
-    2: "../../../assets/3.jpg",
-    3: "../../../assets/4.jpg"
-  }
-
   constructor() { }
 
   ngOnInit(): void {
