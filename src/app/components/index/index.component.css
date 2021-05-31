@@ -1,0 +1,108 @@
+td, th {
+  width: 70px;
+  height: 60px;
+}
+
+.route-index {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 25px;
+}
+
+.subtitle {
+  margin-top: 15px;
+}
+
+.about {
+  display: flex;
+  padding: 22px;
+}
+
+.image {
+  margin-left: 25px;
+  width: 402px;
+  height: 302px;
+  border: 1px solid #ddd;
+}
+
+.text {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.text-p {
+  text-align: justify;
+  font-size: 18px;
+  padding: 8px;
+  padding-top: 0px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carrousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+}
+
+.carrousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 158px;
+  right: -44px;
+  left: 235px;
+  height: auto;
+  background-color: transparent;
+  top: -95px;
+  bottom: 0px;
+}
+
+.pleasures {
+  display: flex;
+  flex-flow: column;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.table {
+  text-align: center;
+  margin: 20px;
+  width: 60%;
+  height: auto;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.row:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.row:hover {
+  background-color: #f2f2f2;
+}
+
+.table-border {
+  border: 2px solid #ddd;
+}
+
+.table-title {
+  text-transform: uppercase;
+  color: white;
+  background-color: #F81894;
+}
