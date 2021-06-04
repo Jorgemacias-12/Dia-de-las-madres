@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,7 +9,7 @@ import { SongComponent } from './components/song/song.component';
 import { JokesComponent } from './components/jokes/jokes.component';
 import { PoemsComponent } from './components/poems/poems.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { CarrouselComponent } from './carrousel/carrousel.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
     JokesComponent,
     PoemsComponent,
     NotFoundComponent,
-    CarrouselComponent
+    CarrouselComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule
   ],
