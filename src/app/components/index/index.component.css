@@ -3,6 +3,11 @@ td, th {
   height: 60px;
 }
 
+app-carrousel {
+  display: block;
+  width: 100%;
+}
+
 .route-index {
   display: flex;
   flex-flow: column;
@@ -49,27 +54,6 @@ td, th {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.carrousel {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  padding: 20px;
-}
-
-.carrousel-controls {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-  width: 158px;
-  right: -44px;
-  left: 235px;
-  height: auto;
-  background-color: transparent;
-  top: -95px;
-  bottom: 0px;
 }
 
 .pleasures {
