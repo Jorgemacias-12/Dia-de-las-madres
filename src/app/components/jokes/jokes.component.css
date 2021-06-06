@@ -1,0 +1,48 @@
+.component-container {
+  display: flex;
+  flex-flow: column;
+  height: auto;
+}
+
+.title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.jokes-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.joke {
+  width: 450px;
+  height: 200px;
+  border: 2px solid #ddd;
+  background-color: #f0f0f0;
+  margin: 25px;
+}
+
+.joke-title {
+  text-align: center;
+  font-size: 24px;
+  text-align: center;
+}
+
+.joke-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: calc(100% - 24px);
+}
+
+.joke-text {
+  margin-top: 5px;
+  padding: 15px;
+  width: 80%;
+  line-height: 150%;
+  text-align: justify;
+  white-space: pre-line;
+}
