@@ -1,0 +1,90 @@
+.component-container {
+  counter-reset: indicator;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 160px);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.poems-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  place-items: center;
+  width: 100%;
+  height: 95%;
+  gap: 20px;
+}
+
+.poem {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  width: 450px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  counter-reset: poems;
+}
+
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.title-container {
+  width: calc(100% - 64px);
+}
+
+.poem-indicator {
+  counter-increment: indicator;
+  width: 50px;
+  height: 50px;
+  background-color: #FC4C4E;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.poem-indicator::before {
+  content: "#" counter(indicator);
+}
+
+.poem-title {
+  text-align: center;
+  font-size: 26px;
+}
+
+.text-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 50%);
+  width: auto;
+  height: 250px;
+}
+
+.poem-text {
+  width: 92%;
+  text-align: justify;
+  font-size: 16px;
+  white-space: pre-line;
+}
