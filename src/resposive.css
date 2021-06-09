@@ -1,4 +1,9 @@
 @import url("https://unpkg.com/css-aspect-ratio@1/css-aspect-ratio.css");
+@import url('app/styles/index.responsive.css');
+@import url('app/styles/jokes.responsive.css');
+@import url('app/styles/poems.responsive.css');
+@import url('app/styles/song.responsive.css');
+
 img {
   --aspect-ratio-w: 4;
   --aspect-ratio-h: 3;
