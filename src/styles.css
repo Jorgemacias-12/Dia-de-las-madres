@@ -1,14 +1,6 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../src/assets/fonts/Roboto-Regular.otf"),
-  url('../src/assets/fonts/Roboto-Bold.otf'),
-  url('../src/assets/fonts/Roboto-Medium.otf'),
-  url('../src/assets/fonts/Roboto-Thin.otf');
-}
-
 * {
-  font-family: Roboto, sans-serif, system-ui;
-  font-style: initial; margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
   padding: 0px;
   border: none;
   outline: none;
