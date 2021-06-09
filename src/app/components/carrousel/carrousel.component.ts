@@ -9,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
     trigger('controls', [
       state('inactive', style({
         opacity: 0,
+        transform: 'translateY(-10%)',
       })),
       state('active', style({
         opacity: 1,
+        transform: 'translateY(0)'
       })),
       transition('inactive => active', animate('0.5s')),
       transition('active => inactive', animate('0.3s'))
