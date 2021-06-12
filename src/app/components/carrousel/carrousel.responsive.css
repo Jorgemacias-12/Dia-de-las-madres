@@ -17,7 +17,7 @@
   }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 600px) {
   .carrousel-image {
     width: 340px;
     height: 250px;
