@@ -1,0 +1,30 @@
+@media all and (max-width: 1199px) {
+  .carrousel-controls {
+    top: 625px;
+    bottom: 10px;
+  }
+}
+
+@media all and (max-width: 959px) {
+  .carrousel-controls {
+    top: 676px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .carrousel-controls {
+    top: 868px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .carrousel-image {
+    width: 340px;
+    height: 250px;
+  }
+  .carrousel-controls {
+    top: 1133px;
+    width: 340px;
+    height: 250px;
+  }
+}
