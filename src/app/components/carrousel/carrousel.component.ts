@@ -22,7 +22,9 @@ import { environment } from 'src/environments/environment';
     ])
   ]
 })
-export class CarrouselComponent {
+export class CarrouselComponent implements OnInit{
+
+  imageElement!: HTMLImageElement;
 
   index: number = 0;
 
@@ -48,8 +50,7 @@ export class CarrouselComponent {
     if (this.index < 0) {
       this.index = this.paths.length - 1;
     }
-    let imageElement = document.getElementById("image") as HTMLImageElement;
-    imageElement.src = this.paths[this.index];
+    this.imageElement.src = this.paths[this.index];
   }
 
   nextImage() {
@@ -57,9 +58,12 @@ export class CarrouselComponent {
     if (this.index >= this.paths.length) {
       this.index = 0;
     }
-    let imageElement = document.getElementById("image") as HTMLImageElement;
-    imageElement.src = this.paths[this.index];
+    this.imageElement.src = this.paths[this.index];
   }
 
+  ngOnInit() {
+    this.imageElement = document.getElementById('image') as HTMLImageElement;
+    this.imageElement.src = environment.imageBaseURL + "/1.jpg";
+  }
 
 }
