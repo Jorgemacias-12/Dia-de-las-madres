@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-carrousel',
@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
     ])
   ]
 })
-export class CarrouselComponent implements OnInit {
+export class CarrouselComponent {
 
   index: number = 0;
 
@@ -34,9 +34,6 @@ export class CarrouselComponent implements OnInit {
   ]
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   activateControls(value: string) {
     this.state = value;
