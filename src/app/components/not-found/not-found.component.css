@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 160px);
+}
+
+.icon {
+  color: #bb2929;
+}
+
+.w-1 {
+  font-size: 250px;
+}
+
+.error-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  width: calc(50% - 50px);
+  height: 50%;
+}
+
+.error-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  width: calc(50% - 50px);
+  height: 50%;
+}
+
+.text {
+  font-size: 50px;
+  text-align: justify;
+}
