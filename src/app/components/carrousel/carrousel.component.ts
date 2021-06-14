@@ -1,5 +1,7 @@
+
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-carrousel',
@@ -27,10 +29,10 @@ export class CarrouselComponent {
   state: string = 'false';
 
   paths = [
-    "../../../assets/1.jpg",
-    "../../../assets/2.jpg",
-    "../../../assets/3.jpg",
-    "../../../assets/4.jpg",
+    environment.imageBaseURL+'/1.jpg',
+    environment.imageBaseURL+'/2.jpg',
+    environment.imageBaseURL+'/3.jpg',
+    environment.imageBaseURL+'/4.jpg',
   ]
 
   constructor() { }
