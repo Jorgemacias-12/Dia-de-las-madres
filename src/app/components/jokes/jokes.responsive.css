@@ -1,0 +1,9 @@
+ @media all and (max-width: 960px) {
+  .joke {
+    width: 350px;
+    height: 200px;
+  }
+  .jokes-grid {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
