@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-index',
@@ -10,5 +11,8 @@ export class IndexComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    let imageElement = document.getElementById('image') as HTMLImageElement;
+    imageElement.src = environment.imageBaseURL+"/mama.jpg";
+    imageElement.alt = 'Foto de mi madre en una fiesta';
   }
 }
