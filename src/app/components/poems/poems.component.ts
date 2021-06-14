@@ -10,6 +10,7 @@ export class PoemsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.title = 'Día de las madres - Poemas';
   }
 
 }

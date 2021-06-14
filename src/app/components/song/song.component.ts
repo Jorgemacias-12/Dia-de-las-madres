@@ -11,6 +11,7 @@ export class SongComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.title = 'Día de las madres - Canción';
     let videoElement = document.getElementById('video') as HTMLVideoElement;
     videoElement.src = environment.imageBaseURL+"/JoséJosé-Madrecita.mp4";
   }
