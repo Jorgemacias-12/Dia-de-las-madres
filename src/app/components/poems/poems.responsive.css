@@ -1,0 +1,28 @@
+@media all and (min-width: 1200px) {
+  .component-container {
+    height: auto;
+  }
+  .poems-grid {
+    gap: 0px;
+  }
+  .poem {
+    width: 450px;
+    margin: 30px;
+  }
+}
+
+
+@media all and (max-width: 767px) {
+  .poems-grid {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+@media all and (max-width: 480px) {
+  .poems-grid {
+    margin-top: 10px;
+  }
+  .poem {
+    width: 350px;
+  }
+}

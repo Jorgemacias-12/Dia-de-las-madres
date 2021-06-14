@@ -1,16 +1,31 @@
-@media all and (min-width: 1200px) {
-  .nav-title {
-    width: 41%;
+@media all  and (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+  .app-nav {
+    margin-top: 0;
+  }
+  .footer {
+    margin-bottom: 0;
   }
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 959px) {
+  .nav-title {
+    width: 50%;
+  }
   .title {
     font-size: 20px;
   }
+  .nav-list {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 767px) {
   .app-nav {
-    flex-flow: column;
     height: 120px;
+    flex-flow: column;
   }
   .nav-title {
     display: flex;
@@ -20,35 +35,28 @@
     height: 60px;
   }
   .nav-list {
-    width: 100%;
+    display: flex;
     justify-content: center;
-  }
-}
-
-@media all and (max-width: 700px) and (max-width: 767px) {
-  .container {
+    align-items: center;
     width: 100%;
   }
-  .app-nav {
-    margin-top: 0px;
-  }
-  .footer {
-    margin-bottom: 0px;
-  }
 }
 
-@media all and (max-width: 440px) {
+@media all and (max-width: 415px) {
+  .title {
+    white-space: pre-line;
+  }
   .app-nav {
     height: 250px;
   }
   .nav-list {
     flex-flow: column;
-    height: calc(250px - 60px)
+    height: calc(100% - 60px);
   }
   .list-item {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
+  }
+  .copy {
+    font-size: 16px;
   }
 }

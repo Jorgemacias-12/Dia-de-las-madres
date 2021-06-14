@@ -1,10 +1,12 @@
+
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-carrousel',
   templateUrl: './carrousel.component.html',
-  styleUrls: ['./carrousel.component.css'],
+  styleUrls: ['./carrousel.component.css', 'carrousel.responsive.css'],
   animations: [
     trigger('controls', [
       state('inactive', style({
@@ -20,23 +22,22 @@ import { Component, OnInit } from '@angular/core';
     ])
   ]
 })
-export class CarrouselComponent implements OnInit {
+export class CarrouselComponent implements OnInit{
+
+  imageElement!: HTMLImageElement;
 
   index: number = 0;
 
   state: string = 'false';
 
   paths = [
-    "../../../assets/1.jpg",
-    "../../../assets/2.jpg",
-    "../../../assets/3.jpg",
-    "../../../assets/4.jpg",
+    environment.imageBaseURL+'/1.jpg',
+    environment.imageBaseURL+'/2.jpg',
+    environment.imageBaseURL+'/3.jpg',
+    environment.imageBaseURL+'/4.jpg',
   ]
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   activateControls(value: string) {
     this.state = value;
@@ -49,8 +50,7 @@ export class CarrouselComponent implements OnInit {
     if (this.index < 0) {
       this.index = this.paths.length - 1;
     }
-    let imageElement = document.getElementById("image") as HTMLImageElement;
-    imageElement.src = this.paths[this.index];
+    this.imageElement.src = this.paths[this.index];
   }
 
   nextImage() {
@@ -58,9 +58,12 @@ export class CarrouselComponent implements OnInit {
     if (this.index >= this.paths.length) {
       this.index = 0;
     }
-    let imageElement = document.getElementById("image") as HTMLImageElement;
-    imageElement.src = this.paths[this.index];
+    this.imageElement.src = this.paths[this.index];
   }
 
+  ngOnInit() {
+    this.imageElement = document.getElementById('image') as HTMLImageElement;
+    this.imageElement.src = environment.imageBaseURL + "/1.jpg";
+  }
 
 }

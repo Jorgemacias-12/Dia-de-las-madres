@@ -1,27 +1,23 @@
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column;
+  align-items: center;
+  height: auto;
+  position: relative;
 }
 
 .carrousel-image {
-  width: 600px;
-  height: 400px;
-  pointer-events: none;
+  position: absolute;
+  width: 50%;
+  height: 50vh;
 }
 
-.carrousel-controls {
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  position: absolute;
-  height: auto;
-  background-color: transparent;
-  bottom: -14px;
-  width: 600px;
-  height: 400px;
-  z-index: 2;
+  width: 50%;
+  height: 50vh;
 }
 
 .btn {
