@@ -1,8 +1,11 @@
 <div class="container">
   <img src="../../../assets/1.jpg" alt="" class="carrousel-image" id="image">
-  <div class="carrousel-controls" [@controls]="state" (mouseover)="activateControls('active')"
-    (mouseout)="activateControls('inactive')">
-    <button class="btn btn-left" (click)="prevImage()"><span class="fas fa-angle-left"></span></button>
-    <button class="btn btn-right" (click)="nextImage()"><span class="fas fa-angle-right"></span></button>
+  <div class="btn-container" (mouseover)="activateControls('active')" (mouseout)="activateControls('inactive')" [@controls]="state">
+    <button class="btn btn-left" (click)="nextImage()">
+      <span class="fas fa-angle-left"></span>
+    </button>
+    <button class="btn btn-right" (click)="prevImage()">
+      <span class="fas fa-angle-right"></span>
+    </button>
   </div>
 </div>
