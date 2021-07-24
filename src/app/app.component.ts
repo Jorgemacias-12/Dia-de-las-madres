@@ -1,21 +1,20 @@
+import { setAppHeight } from './util/utils';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css','../resposive.css']
+  styleUrls: ['./app.component.css', '../resposive.css']
 })
 export class AppComponent implements OnInit {
   copyright_date!: string;
   greeting!: string;
 
   ngOnInit(): void {
-    this.copyright_date =
-      `
-      \u00A9 Jorge Antonio Macias Zambrano ${new Date().getFullYear()}
-    `;
+    this.copyright_date = ` \u00A9 Jorge Antonio Macias Zambrano ${new Date().getFullYear()} `;
     this.greeting = `¡Bienvenido(a)s! ${this.greet()}`;
-
+    setAppHeight(0, document.getElementById('app') as HTMLElement);
   }
 
   greet(): string {
