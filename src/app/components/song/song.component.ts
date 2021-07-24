@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { setAppHeight } from 'src/app/util/utils';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -14,6 +15,7 @@ export class SongComponent implements OnInit {
     document.title = 'Día de las madres - Canción';
     let videoElement = document.getElementById('video') as HTMLVideoElement;
     videoElement.src = environment.imageBaseURL+"/JoséJosé-Madrecita.mp4";
+    setAppHeight(1, document.getElementById('app') as HTMLElement);
   }
 
 }

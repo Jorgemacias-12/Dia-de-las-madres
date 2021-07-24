@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { setAppHeight } from 'src/app/util/utils';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -15,5 +16,6 @@ export class IndexComponent implements OnInit {
     let imageElement = document.getElementById('index-image') as HTMLImageElement;
     imageElement.src = environment.imageBaseURL+"/mama.jpg";
     imageElement.alt = 'Foto de mi madre en una fiesta';
+    setAppHeight(0, document.getElementById('app') as HTMLElement);
   }
 }

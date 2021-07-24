@@ -1,3 +1,4 @@
+import { setAppHeight } from './util/utils';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -13,6 +14,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.copyright_date = ` \u00A9 Jorge Antonio Macias Zambrano ${new Date().getFullYear()} `;
     this.greeting = `¡Bienvenido(a)s! ${this.greet()}`;
+    setAppHeight(0, document.getElementById('app') as HTMLElement);
   }
 
   greet(): string {
